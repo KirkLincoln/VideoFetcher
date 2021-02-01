@@ -13,16 +13,16 @@ func fetch() {
 }
 
 func search() {
-	/* Calls regex and returns JSON */
+	/* Calls regex and returns JSON, should call CompareDirectory or fire go routine to traverse video dir */
 }
 
 func compareDirectory() {
 	/* Check if directory exists, if not then provision one */
 
 	/* Initiate ch */
-	/* go fetch() {
-	   	  go filterDirectoryContents(ch)
-	   }
+	/* 
+	   go filterDirectoryContents(ch)
+	   
 	 */
 }
 
@@ -34,7 +34,7 @@ func handler() {
 	/*
 	 *     validateInput() //entry
 	 *      /            \
-	 *  fetch()			search() // concurrent internal
+	 *  fetch()	  search() // concurrent internal
 	 *      \            /
 	 *     compareDirectory()  // concurrent internal
 	 *        \        /
